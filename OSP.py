@@ -108,8 +108,6 @@ def ShowMinTree(points, save):
             y.append(top.y)
             now.append(top)
     plt.plot(x, y, color="pink", marker="o")
-    if save:
-        plt.savefig("tree.png")
     plt.show()
 
 def Charts(points, save):
@@ -129,8 +127,6 @@ def Charts(points, save):
                 if not used.__contains__(vertex):
                     plt.scatter(vertex.x, vertex.y, color=color)
                     queue.append(vertex)
-    if save:
-        plt.savefig("clustering_result.png")
     plt.show()
 
 
